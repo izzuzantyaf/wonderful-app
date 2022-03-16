@@ -1,19 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wonderful App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour & Travel</title>
+
+    <!-- File CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
-
 <body>
-  <section class="footer">
-    <p>123 Fifth Avenue, NY 10160, New York, USA|Phone: 800-123-456|Email: contact@example.com</p>
-    <p>Copyright ©2020 Outdoor Adventure</p>
-  </section>
-</body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1 class="logo">TOUR & TRAVEL</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
 
+    <!--Header-->
+    <header>
+        <div class="header-content">
+            <h4>BUILD YOUR NEXT HOLIDAY WITH US</h4>
+            <div class="line"></div>
+            <h1>CREATE YOUR TOUR</h1>
+            <a href="#" class="ctn-header">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Events-->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Event</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.jpg" alt="">
+                <h4>Tanjung Tinggi Beach</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi magni aliquam qui nam cumque itaque?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/img2.png" alt="">
+                <h4>Explore Bromo</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi magni aliquam qui nam cumque itaque?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Explore-->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE DESTINATION</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi iste est aspernatur modi maiores odio! Esse reprehenderit suscipit voluptatum beatae qui eos sequi autem soluta?</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!--Gallery-->
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>GALLERY TOUR & TRAVEL</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit distinctio numquam explicabo magnam veritatis ut rem tempora velit sit libero autem cum deserunt, esse, quia, voluptatibus aut dignissimos? Molestiae?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/img3.jpg" alt="">
+                    <img src="./img/img4.jpg" alt="">
+                    <img src="./img/img5.jpg" alt="">
+                    <img src="./img/img6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <p>Jl. Sukamaju, No.01 Indoesia | Phone: 083865474563 | Email: tourtravel@gmail.com</p>
+        <p>Copyright @2022 A28</p>
+    </section>
+
+    <!--Javascript drop down menu mobile device-->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
 </html>
